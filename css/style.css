@@ -4,4 +4,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: var(--color-body);
+}
+
+header{
+    margin: 20px;
+    height: 10vh;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    display: flex;
+}
+
+header .nombre_principal{
+    color: var(--color-naranja);
+    margin-left: 10vh;
+}
+
+header .menu ul{
+    display: flex;
+    margin-right: 10vh;
+}
+
+header .menu ul li{
+    margin: 20px;
+    list-style: none;
+}
+
+header .menu ul .Home{
+    border: 1px solid green;
+}
+
+header .menu ul .Home{
+    padding: 4px;
+}
+
+header .menu ul li a{
+    color: var(--color-fuentes);
+    text-decoration: none;
+}
+
+.principal{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "contend img";
+}
+
+.contenido{
+    grid-area: contend;
+}
+
+.imagen{
+    grid-area: img;
+}
+
+.imagen img{
+    width: 80%;
+    height: 80%;
 }
