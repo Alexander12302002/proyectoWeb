@@ -21,6 +21,10 @@ header{
     justify-content: space-between; 
 }
 
+header .abrir, .cerrar{
+    display: none;
+}
+
 header .nombre_principal{
     color: var(--color-naranja);
     margin-left: 10vh;
@@ -376,4 +380,66 @@ header .menu ul li a{
 .footer .info .redes li{
     margin: 5px;
     color: var(--color-naranja);
+}
+
+@media (max-width: 600px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Poppins', sans-serif;
+    }
+
+    header .abrir, .cerrar{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    header .menu ul {   
+        margin-right: 0vh;
+    }
+
+    header .menu ul li{   
+        margin: 0vh;
+    }
+
+    .menu{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--color-menu-movil);
+        padding: 2em;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .menu.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu .cerrar{
+        margin-bottom: 2vh;
+    }
+
+    .menu .menu-items{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu .menu-items li{
+        margin-bottom: 2vh;
+    }
 }
