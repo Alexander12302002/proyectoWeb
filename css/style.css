@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body{
     background: var(--color-body);
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -60,13 +60,44 @@ header .menu ul li a{
 
 .contenido{
     grid-area: contend;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+.contenido h1{
+    color: var(--color-naranja);
+    font-size: 5em;
+    margin: 20px;
+}
+
+.contenido p{
+    color: var(--color-fuentes);
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+.contenido button{
+    background: var(--color-naranja);
+    color: var(--color-fuentes);
+    font-size: 1.2em;
+    width: 25%;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .imagen{
     grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30%;
 }
 
 .imagen img{
     width: 80%;
     height: 80%;
 }
+
