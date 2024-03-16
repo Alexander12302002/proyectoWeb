@@ -18,7 +18,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;    display: flex;
+    justify-content: space-between; 
 }
 
 header .nombre_principal{
@@ -49,8 +49,8 @@ header .menu ul li a{
     text-decoration: none;
 }
 
-.principal{
-    height: 70vh;
+.principal{ 
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -63,12 +63,13 @@ header .menu ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 30%;
+    margin-left: 20%;
+    margin-bottom: 20%;
 }
 
 .contenido h1{
     color: var(--color-naranja);
-    font-size: 5em;
+    font-size: 4em;
     margin: 20px;
 }
 
@@ -79,10 +80,11 @@ header .menu ul li a{
 }
 
 .contenido button{
+    border: none;   
     background: var(--color-naranja);
     color: var(--color-fuentes);
     font-size: 1.2em;
-    width: 25%;
+    width: 35%;
     height: 50px;
     margin-left: 20px;
     margin-top: 20px;
@@ -93,11 +95,285 @@ header .menu ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 30%;
+    margin-bottom: 20%;
 }
 
 .imagen img{
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
 }
 
+.page_About{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "img2 contend2"
+    ;
+}
+
+.imagen_2{
+    grid-area: img2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen_2 img{
+    width: 60%;
+    height: 60%;
+}
+
+.contenido_2{
+    grid-area: contend2;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenido_2 h5{
+    color: var(--color-naranja);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+.contenido_2 h3{
+    color: var(--color-fuentes);
+    font-size: 3em;
+}
+
+.contenido_2 p{
+    color: var(--color-fuentes);
+    font-size: 1.3em;
+}
+
+.contenido_2 button{
+    border: none;
+    background: var(--color-naranja);
+    color: var(--color-fuentes);
+    font-size: 1.2em;
+    width: 40%;
+    height: 6%;
+    margin-top: 15px;
+}
+
+.page_menu{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "contend3"
+    "img3"
+    ;
+}
+
+.contenido_3{
+    grid-area: contend3;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido_3 h4{
+    color: var(--color-naranja);
+}
+
+.contenido_3 h1{
+    color: var(--color-fuentes);
+    font-size: 3em;
+}
+
+.imagen_3{
+    grid-area: img3;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_3 .comidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-piel);
+    margin: 2vh;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20vh;
+}
+
+.imagen_3 .comidas img{
+    width: 50%;
+    height: 50%;
+}
+
+.imagen_3 .comidas h5{
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.imagen_3 .comidas h3{
+    margin: 5px;
+    font-size: 1.1em;
+}
+
+.imagen_3 .comidas h6{
+    margin: 5px;
+    color: var(--color-naranja);
+    font-size: .9em;
+}
+
+.page_services{
+    margin-top: 20vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "contend4"
+    "img4"
+    ;
+}
+
+.contenido_4{
+    grid-area: contend4;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.contenido_4 h4{
+    color: var(--color-naranja);
+}
+
+.contenido_4 h1{
+    color: var(--color-fuentes);
+    font-size: 3em;
+}
+
+.imagen_4{
+    grid-area: img4;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen_4 .Services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20vh;
+}
+
+.imagen_4 img{
+    width: 70%;
+    height: 60%;
+}
+
+.imagen_4 .Services h5{
+    color: var(--color-naranja);
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.imagen_4 .Services p{
+    display: flex;
+    color: var(--color-fuentes);
+    font-size: .9em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page_contact{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "anuncio"
+    "footer";
+}
+
+.anuncio{
+    grid-area: anuncio;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anuncio .ventana{
+    width: 80%;
+    height: 80%;
+    background: var(--color-piel);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.anuncio .ventana h1{
+    font-size: 2em;
+}
+
+.anuncio .ventana button{
+    border: none;
+    background: var(--color-naranja);
+    color: var(--color-fuentes);
+    font-size: 1.2em;
+    width: 15%;
+    height: 10%;
+    margin-top: 15px;
+}
+
+.footer{
+    grid-area: footer;
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--color-fuentes);
+
+}
+
+.footer h3{
+    border-bottom: 1px solid var(--color-naranja);
+}
+
+.footer .info ul{
+    margin-top: 10px;
+
+}
+
+.footer .info ul li{
+    list-style: none;
+} 
+
+.footer .info ul li a{
+    color: var(--color-fuentes);
+    text-decoration: none;
+}
+
+.footer .info .redes{
+    display: flex;
+}
+
+.footer .info .redes li{
+    margin: 5px;
+    color: var(--color-naranja);
+}
