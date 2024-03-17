@@ -397,6 +397,13 @@ header .menu ul li a{
         display: block;
     }
 
+    header{
+        height: 0vh;
+    }
+
+    header .nombre_principal{
+        margin-left: 1vh;
+    }
     .menu{
         display: none;
     }
@@ -441,5 +448,107 @@ header .menu ul li a{
 
     .menu .menu-items li{
         margin-bottom: 2vh;
+    }
+
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "contend" 
+        "img"
+        ;
+    }
+
+    .contenido{
+        margin: 0%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido h1{
+        font-size: 3em;
+    }
+
+    .contenido p{
+        font-size: 2em;
+    }
+
+    .imagen img{
+        margin-bottom: 30%;
+    }
+
+    .page_About{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "contend2" 
+        "img2"
+        ;
+    }
+
+    .contenido_2{
+        width: 100%;
+        align-items: center;
+    }
+
+    .contenido_2 h3{
+        font-size: 2em;
+    }
+
+    .contenido_2 p{
+        font-size: 1em;
+        margin-left: 7vh;
+        margin-right: 7vh;
+    }
+
+    .contenido_2 button{
+        height: 10%;
+    }
+
+    .imagen_2 img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .page_menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "contend3"
+        "img3";
+    }
+
+    .contenido_3 h1{
+        display: flex;
+        width: 100%;
+        font-size: 1.4em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen_3{
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 10vh;
+    }
+    
+    .imagen_3 .comidas{
+        margin-bottom: 0vh;
+    }
+
+    .page_services{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "contend4"
+        "img4";
+    }
+
+    .imagen_4{
+        height: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
     }
 }
