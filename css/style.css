@@ -25,6 +25,16 @@ header .abrir, .cerrar{
     display: none;
 }
 
+header .abrir, .cerrar{
+    background: none;
+    border: none;
+}
+
+header .abrir, .cerrar i{
+    color: var(--color-naranja);
+    font-size: 1em;
+}
+
 header .nombre_principal{
     color: var(--color-naranja);
     margin-left: 10vh;
@@ -76,6 +86,7 @@ header .menu ul li a{
     font-size: 4em;
     margin: 20px;
 }
+
 
 .contenido p{
     color: var(--color-fuentes);
@@ -451,6 +462,7 @@ header .menu ul li a{
     }
 
     .principal{
+        height: 85vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -461,6 +473,7 @@ header .menu ul li a{
     }
 
     .contenido{
+        height: 30vh;
         margin: 0%;
         align-items: center;
         justify-content: center;
@@ -474,8 +487,9 @@ header .menu ul li a{
         font-size: 2em;
     }
 
-    .imagen img{
-        margin-bottom: 30%;
+    .imagen{
+        height: 50vh;
+        margin-bottom: 0vh;
     }
 
     .page_About{
@@ -493,11 +507,14 @@ header .menu ul li a{
     }
 
     .contenido_2 h3{
-        font-size: 2em;
+        font-size: 1.3em;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        margin-bottom: 2vh;
     }
 
     .contenido_2 p{
-        font-size: 1em;
+        font-size: .9em;
         margin-left: 7vh;
         margin-right: 7vh;
     }
@@ -512,12 +529,16 @@ header .menu ul li a{
     }
 
     .page_menu{
-        height: 190vh;
+        height: 150vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "contend3"
         "img3";
+    }
+
+    .contenido_3{
+        height: 20vh;
     }
 
     .contenido_3 h1{
@@ -540,13 +561,16 @@ header .menu ul li a{
     }
 
     .page_services{
-        height: 190vh;
-        margin-top: 0vh;
+        height: 170vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
         "contend4"
         "img4";
+    }
+
+    .contenido_4{
+        height: 30vh;
     }
 
     .contenido_4 h1{
@@ -564,7 +588,8 @@ header .menu ul li a{
     }
 
     .page_contact{
-        height: 135vh;
+        margin-top: 10vh;
+        height: 130vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
