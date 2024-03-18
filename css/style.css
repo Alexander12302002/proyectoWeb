@@ -21,7 +21,7 @@ header{
     justify-content: space-between; 
 }
 
-header .abrir, .cerrar{
+header .abrir, .cerrar, .nombre_principal_2{
     display: none;
 }
 
@@ -50,12 +50,8 @@ header .menu ul li{
     list-style: none;
 }
 
-header .menu ul .Home{
+header .menu ul li a:hover{
     border: 1px solid green;
-}
-
-header .menu ul .Home{
-    padding: 4px;
 }
 
 header .menu ul li a{
@@ -80,6 +76,7 @@ header .menu ul li a{
     margin-left: 20%;
     margin-bottom: 20%;
 }
+
 
 .contenido h1{
     color: var(--color-naranja);
@@ -188,7 +185,7 @@ header .menu ul li a{
 
 .contenido_3{
     grid-area: contend3;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +204,7 @@ header .menu ul li a{
 .imagen_3{
     grid-area: img3;
     display: flex;
-    height: 60vh;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
@@ -219,9 +216,9 @@ header .menu ul li a{
     justify-content: center;
     background: var(--color-piel);
     margin: 2vh;
-    width: 300px;
-    height: 350px;
-    margin-bottom: 20vh;
+    width: 50%;
+    height: 80%;
+    margin-bottom: 10vh;
 }
 
 .imagen_3 .comidas img{
@@ -259,7 +256,7 @@ header .menu ul li a{
 
 .contenido_4{
     grid-area: contend4;
-    height: 40vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +277,7 @@ header .menu ul li a{
 .imagen_4{
     grid-area: img4;
     display: flex;
-    height: 60vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
 }
@@ -291,9 +288,9 @@ header .menu ul li a{
     align-items: center;
     justify-content: center;
     margin: 2vh;
-    width: 300px;
-    height: 350px;
-    margin-bottom: 20vh;
+    width: 50%;
+    height: 80%;
+    margin-bottom: 10vh;
 }
 
 .imagen_4 img{
@@ -404,12 +401,25 @@ header .menu ul li a{
         font-family: 'Poppins', sans-serif;
     }
 
-    header .abrir, .cerrar{
+    header .abrir, .cerrar, .nombre_principal_2{
         display: block;
     }
 
     header{
         height: 0vh;
+    }
+
+    header .nombre_principal_2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .nombre_principal_2 h6{
+        margin: 2vh;
+        color: var(--color-naranja);
+        font-family: 'Poppins', sans-serif;;
     }
 
     header .nombre_principal{
@@ -428,6 +438,7 @@ header .menu ul li a{
     }
 
     .menu{
+        background: var(--color-body);
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -436,10 +447,7 @@ header .menu ul li a{
         position: absolute;
         top: 0;
         right: 0;
-        bottom: 0;
-        background: var(--color-menu-movil);
-        padding: 2em;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        left: 0;
     }
 
     .menu.visible{
@@ -448,13 +456,19 @@ header .menu ul li a{
     }
     
     .menu .cerrar{
-        margin-bottom: 2vh;
+        margin: 2vh;
+    }
+
+    .menu .cerrar i{
+        font-size: 3em;
     }
 
     .menu .menu-items{
+        background: var(--color-menu-movil);
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
     }
 
     .menu .menu-items li{
@@ -462,7 +476,7 @@ header .menu ul li a{
     }
 
     .principal{
-        height: 85vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -473,7 +487,6 @@ header .menu ul li a{
     }
 
     .contenido{
-        height: 30vh;
         margin: 0%;
         align-items: center;
         justify-content: center;
@@ -488,11 +501,12 @@ header .menu ul li a{
     }
 
     .imagen{
-        height: 50vh;
+        align-items: flex-start;
         margin-bottom: 0vh;
     }
 
     .page_About{
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
@@ -503,6 +517,7 @@ header .menu ul li a{
 
     .contenido_2{
         width: 100%;
+        height: 40vh;
         align-items: center;
     }
 
@@ -523,13 +538,17 @@ header .menu ul li a{
         height: 10%;
     }
 
+    .imagen_2{
+        align-items: flex-start;
+    }
+
     .imagen_2 img{
         width: 70%;
         height: 70%;
     }
 
     .page_menu{
-        height: 150vh;
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
@@ -557,11 +576,14 @@ header .menu ul li a{
     }
     
     .imagen_3 .comidas{
+        font-size: .9em;
+        width: 55%;
         margin-bottom: 0vh;
     }
 
     .page_services{
-        height: 170vh;
+        margin-bottom: 30vh;
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
@@ -570,7 +592,7 @@ header .menu ul li a{
     }
 
     .contenido_4{
-        height: 30vh;
+        height: 20vh;
     }
 
     .contenido_4 h1{
@@ -579,7 +601,6 @@ header .menu ul li a{
 
     .imagen_4{
         height: 100%;
-        justify-content: flex-start;
         flex-direction: column;
     }
 
@@ -588,8 +609,7 @@ header .menu ul li a{
     }
 
     .page_contact{
-        margin-top: 10vh;
-        height: 130vh;
+        height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
@@ -613,6 +633,7 @@ header .menu ul li a{
     }
 
     .footer{    
+        height: 100%;
         margin-left: 5vh;
         margin-right: 5vh;
         flex-direction: column;
