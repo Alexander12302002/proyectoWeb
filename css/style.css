@@ -5,3 +5,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: var(--color-principal);
+}
+
+.ecommerCampus{
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "menu product";
+}
+
+.menu_lateral{
+    width: 30vh;
+    grid-area: menu;
+}
+
+.productos{
+    width: 70vh;
+    grid-area: product;
+    display: flex;
+}
