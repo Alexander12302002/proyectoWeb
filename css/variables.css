@@ -2,9 +2,9 @@
 
 :root{
     --color-fuentes: #ffffff;
-    --color-naranja: #ff702a;
-    --color-body: #1e1d2b;
-    --color-negro: #000;
-    --color-piel: #ffefe8;
+    --color-principal: #00224D;
+    --color-secundario: #5D0E41;
+    --color-tercero: #A0153E;
+    --color-cuarto: #FF204E;
     --color-menu-movil: #2c2b47;
 }
