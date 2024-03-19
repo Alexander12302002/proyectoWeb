@@ -12,7 +12,7 @@ body{
 
 .ecommerCampus{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 25% auto;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "menu product";
@@ -24,7 +24,7 @@ body{
 }
 
 .menu_lateral .logo{
-    color: var(--color-fuentes);
+    color: var(--color-cuarto);
     height: 20vh;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ body{
 
 .menu_lateral .opciones .opciones_menu ul li a{
     text-decoration: none;
-    color: var(--color-fuentes);
+    color: var(--color-cuarto);
 }
 
 .menu_lateral .opciones .opciones_menu ul li a:hover{
@@ -60,7 +60,7 @@ body{
 
 .menu_lateral .opciones .Carrito a{
     text-decoration: none;
-    color: var(--color-fuentes);
+    color: var(--color-cuarto);
     font-size: 1.3em;
     margin-right: 20vh;
     display: flex;
@@ -75,7 +75,8 @@ body{
 }
 
 .productos{
-    margin: 2vh;
+    height: 96vh;
+    margin: 3vh;
     border-radius: 10px;
     background: var(--color-cuarto);
     grid-area: product;
@@ -89,31 +90,71 @@ body{
 }
 
 .imagenes_productos{
+    width: 100%;
     display: flex;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+}
+
+.imagenes_productos::-webkit-scrollbar{
+    width: 8px;
 }
 
 .producto{
-    margin: 1vh;
+    margin: 3px;
+    border-radius: 15px;
+    background: var(--color-fuentes);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.imagenes_productos .Abrigos .descripcion_total{
-    border-radius: 20px;
-    width: 180px;
-    height: 50px;
+.imagenes_productos .descripcion_total{
+    border-radius: 15px;
+    height: 10vh;
     background: var(--color-tercero);
     display: flex;
 }
 
-.imagenes_productos .Abrigos .descripcion_total .descripcion{
+.imagenes_productos .descripcion_total .descripcion{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 1vh;
+    font-size: .9em;
+    color: var(--color-menu-movil);
+    width: 70%;
 }
 
-.imagenes_productos .Abrigos .descripcion_total .boton{
+.imagenes_productos  .descripcion_total .descripcion h2{
+    font-size: 1em;
+    margin: 1vh;
+}
+
+
+.imagenes_productos img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 180px;
+    height: 200px;
+}
+
+.imagenes_productos .descripcion_total .boton{
     display: flex;
     align-items: flex-end;
+    margin: 1vh;
 }
 
-.imagenes_productos .Abrigos img{
-    width: 180px;
+.imagenes_productos .descripcion_total .boton button{
+    background: var(--color-cuarto);
+    border: none;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 15px;
+    color: var(--color-menu-movil);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+
+.imagenes_productos .descripcion_total .boton button:hover{
+    background: var(--color-menu-movil);
+    color: var(--color-fuentes);
+    cursor: pointer;
 }
