@@ -76,7 +76,7 @@ body{
 
 .productos{
     height: 96vh;
-    margin: 3vh;
+    margin: 1vh;
     border-radius: 10px;
     background: var(--color-cuarto);
     grid-area: product;
@@ -86,7 +86,7 @@ body{
 
 .productos h1{
     color: var(--color-fuentes);
-    margin: 3vh;
+    margin: 1vh;
 }
 
 .imagenes_productos{
@@ -101,7 +101,9 @@ body{
 }
 
 .producto{
-    margin: 3px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 5px;
     border-radius: 15px;
     background: var(--color-fuentes);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -110,6 +112,7 @@ body{
 .imagenes_productos .descripcion_total{
     border-radius: 15px;
     height: 10vh;
+    width: 20vh;
     background: var(--color-tercero);
     display: flex;
 }
@@ -119,7 +122,6 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-left: 1vh;
-    font-size: .9em;
     color: var(--color-menu-movil);
     width: 70%;
 }
@@ -157,4 +159,22 @@ body{
     background: var(--color-menu-movil);
     color: var(--color-fuentes);
     cursor: pointer;
+}
+
+.Abrigos, .camisetas , .pantalon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Abrigos{
+    font-size: .7em;
+}
+
+.camisetas{
+    font-size: .6em;
+}
+
+.pantalon{
+    font-size: .6em
 }
