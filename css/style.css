@@ -11,8 +11,6 @@ body{
 }
 
 .ecommerCampus{
-    width: 100vh;
-    height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -21,12 +19,101 @@ body{
 }
 
 .menu_lateral{
-    width: 30vh;
+    width: 50vh;
     grid-area: menu;
 }
 
+.menu_lateral .logo{
+    color: var(--color-fuentes);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.menu_lateral .opciones{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu_lateral .opciones .opciones_menu ul li{
+    margin: 2vh;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+.menu_lateral .opciones .opciones_menu ul li a{
+    text-decoration: none;
+    color: var(--color-fuentes);
+}
+
+.menu_lateral .opciones .opciones_menu ul li a:hover{
+    color: var(--color-menu-movil);
+}
+
+.menu_lateral .opciones .Carrito{
+    margin-top: 5vh;
+    display: flex;
+}
+
+.menu_lateral .opciones .Carrito a{
+    text-decoration: none;
+    color: var(--color-fuentes);
+    font-size: 1.3em;
+    margin-right: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu_lateral .opciones .Carrito h1{
+    background: white;
+    padding: 1vh;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 .productos{
-    width: 70vh;
+    margin: 2vh;
+    border-radius: 10px;
+    background: var(--color-cuarto);
     grid-area: product;
     display: flex;
+    flex-direction: column;
+}
+
+.productos h1{
+    color: var(--color-fuentes);
+    margin: 3vh;
+}
+
+.imagenes_productos{
+    display: flex;
+}
+
+.producto{
+    margin: 1vh;
+}
+
+.imagenes_productos .Abrigos .descripcion_total{
+    border-radius: 20px;
+    width: 180px;
+    height: 50px;
+    background: var(--color-tercero);
+    display: flex;
+}
+
+.imagenes_productos .Abrigos .descripcion_total .descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenes_productos .Abrigos .descripcion_total .boton{
+    display: flex;
+    align-items: flex-end;
+}
+
+.imagenes_productos .Abrigos img{
+    width: 180px;
 }
