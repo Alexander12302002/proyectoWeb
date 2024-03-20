@@ -18,6 +18,14 @@ body{
     "menu product";
 }
 
+.abrir, .cerrar{
+    display: none;
+}
+
+.menu_lateral .opciones .opciones_menu ul .ver-carrito{
+    display: none;
+}
+
 .menu_lateral{
     width: 50vh;
     grid-area: menu;
@@ -50,7 +58,7 @@ body{
 }
 
 .menu_lateral .opciones .opciones_menu ul li a:hover{
-    color: var(--color-menu-movil);
+    color: var(--color-fuentes);
 }
 
 .menu_lateral .opciones .Carrito{
@@ -133,8 +141,6 @@ body{
 
 
 .imagenes_productos img{
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
     width: 180px;
     height: 200px;
 }
@@ -178,3 +184,106 @@ body{
 .pantalon{
     font-size: .6em
 }
+
+
+@media (width <= 800px){
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .menu_lateral .opciones .Carrito h1{
+        display: none;
+    }
+    
+    .menu_lateral .opciones .opciones_menu ul .ver-carrito{
+        display: block;
+    }
+
+    .ecommerCampus{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "menu"
+        "product";
+        }
+    
+    
+    .menu_lateral{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menu_lateral .logo{
+        height: 10vh;
+        margin: 2vh;
+        color: var(--color-cuarto);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu_lateral .abrir{
+        margin: 2vh;
+        font-size: 2em;
+    }
+    
+    .imagenes_productos{
+        justify-content: center;
+    }
+    
+    .abrir, .cerrar{
+        display: block;
+        background: none;
+        border: none;
+    }
+    
+    .opciones{
+        background: var(--color-cuarto);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
+    .opciones.visible{
+        height: 40vh;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .opciones .cerrar{
+        margin: 2vh;
+    }
+    
+    .opciones .cerrar i{
+        font-size: 3em;
+    }
+    
+    .opciones .opciones_menu{
+        background: var(--color-menu-movil);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .opciones .opciones_menu li{
+        margin-bottom: 2vh;
+    }
+    
+    
+    }
