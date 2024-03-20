@@ -93,45 +93,13 @@ body{
     margin: 10px;
     overflow-y: scroll;
     height: 75vh;
-}
-
-.productos_comprados .item{
+    background: var(--color-fuentes);
     border-radius: 30px;
-    margin-top: 10px;
-    background: white;
-    display: flex;
-
 }
 
-.productos_comprados .item img{
-    width: 30%;
-    filter: brightness(1.1);
-    mix-blend-mode: multiply;
-    width: 100px;
-    height: 130px;
-    margin: 10px;
+.productos_comprados h2{
+    margin: 30px;
 }
-
-.productos_comprados .item .imagen, .descripcion, .cantidad, .precio,
-.total, .cancelar{
-    width: 30%;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    font-size: .8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-}
-
-.cancelar i{
-    font-size: 4em;
-}
-
-.cancelar i:hover{
-    cursor: pointer;
-    color: red;
-}
-
 
 .opciones_carrito{
     margin-left: 3vh;

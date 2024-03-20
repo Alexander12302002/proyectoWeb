@@ -112,7 +112,7 @@ body{
 .imagenes_productos .descripcion_total{
     border-radius: 15px;
     height: 10vh;
-    width: 20vh;
+    width: 30vh;    
     background: var(--color-tercero);
     display: flex;
 }
