@@ -197,6 +197,14 @@ body{
     .menu_lateral .opciones .Carrito h1{
         display: none;
     }
+    
+    .menu_lateral .opciones .Carrito a{
+        display: none;
+    }
+    
+    .abrir,  .cerrar i{
+        color: var(--color-fuentes);
+    }
 
     .menu_lateral .opciones .opciones_menu ul .ver-carrito{
         display: block;
